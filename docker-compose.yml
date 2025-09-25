@@ -1,0 +1,8 @@
+services:
+  sophos-firewall-rule-export:
+    image: paulwae/sophos-firewall-rule-export:latest
+    volumes:
+      - .:/data
+    working_dir: /data
+    stdin_open: true
+    tty: true
